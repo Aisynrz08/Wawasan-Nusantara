@@ -1,0 +1,53 @@
+/* Base menu button */
+.menu-button {
+  font-family: "Noto Sans", Arial, sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  letter-spacing: 0.035em;
+
+  color: #F0E8D5;
+  background-color: transparent;
+
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  padding: 11px 18px;
+  text-align: left;
+
+  cursor: pointer;
+  transition:
+    color 140ms ease,
+    background-color 140ms ease,
+    border-color 140ms ease;
+}
+
+/* Mouse hover */
+.menu-button:hover {
+  color: #FFFFFF;
+  background-color: rgb(240 232 213 / 7%);
+}
+
+/* Keyboard focus */
+.menu-button:focus-visible {
+  outline: 2px solid #D9B56D;
+  outline-offset: 3px;
+}
+
+/* Pressed */
+.menu-button:active {
+  background-color: rgb(217 181 109 / 16%);
+}
+
+/* Currently selected menu item */
+.menu-button.is-selected {
+  color: #E8CB8C;
+  background-color: rgb(217 181 109 / 10%);
+  border-color: rgb(217 181 109 / 45%);
+  font-weight: 600;
+}
+
+/* Selected item on hover */
+.menu-button.is-selected:hover {
+  background-color: rgb(217 181 109 / 17%);
+  border-color: #D9B56D;
+}
